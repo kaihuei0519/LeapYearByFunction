@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ZH-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>計算閏年練習題，改用function。</title>
+</head>
+<body>
+    <script>
+        /*
+        計算閏年練習題，改用function。
+        */
+      
+        function isLeapYear(year){
+          if( year % 400 == 0 || (year % 4 == 0 && year % 100 != 0 )) {
+            document.write("潤年");
+            console.log("潤年");
+          } else {
+            document.write("不為潤年");
+            console.log("不為潤年");
+          }
+        }
+      
+        var year = prompt("請輸入年份");
+        isLeapYear(year);
+      </script>
+</body>
+</html>
